@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+	<h1>Home Page</h1>
+
+	<form th:action="upload" method="POST" enctype="multipart/form-data">
+		<div class="form-group">
+			<label for="id">ID</label>
+			<input type="text" class="form-control" id="id" name="id">
+		</div>
+				<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control" id="name" name="name">
+		</div>
+				<div class="form-group">
+			<label for="brand">Brand</label>
+			<input type="text" class="form-control" id="brand" name="brand">
+		</div>
+				<div class="form-group">
+			<label for="price">Price</label>
+			<input type="text" class="form-control" id="price" name="price">
+		</div>
+				<div class="form-group">
+			<label for="edate">EDAte</label>
+			<input type="date" class="form-control" id="edate" name="edate">
+		</div>
+				<div class="form-group">
+			<label for="stock">Stock</label>
+			<input type="text" class="form-control" id="stock" name="stock">
+		</div>
+				<div class="form-group">
+			<label for="category">Category</label>
+			<input type="text" class="form-control" id="category" name="category">
+		</div>
+		           <!--for single file to upload-->
+						<div class="form-group">
+			<label for="imgurl1">ImgUrl1</label>
+			<input type="file" class="form-control" id="imgurl1" name="imgurl1" >
+		</div>
+		<!--for multiple files to upload-->
+				<!--<div class="form-group">
+			<label for="imgurl1">ImgUrl1</label>
+			<input type="file" class="form-control" id="imgurl1" name="imgurl1" multiple>
+		</div>-->
+		
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</body>
+
+</html>
